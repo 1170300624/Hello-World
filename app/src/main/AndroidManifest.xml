@@ -10,8 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Helloworld">
         <activity
-            android:name=".GridActivity"
+            android:name=".LinearRecyclerActivity"
             android:exported="true" />
+        <activity
+            android:name=".RecyclerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DialogActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".IntentTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GridActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.activitytest.ACTION_GRID" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ListActivity"
             android:exported="true" />
@@ -19,8 +38,7 @@
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="and roid.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -32,4 +32,40 @@
         android:layout_below="@+id/main_list"
         />
 
+    <EditText
+        android:id="@+id/main_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_grid"
+        android:hint="Send to intent"
+        android:textSize="32sp"
+        />
+
+    <Button
+        android:id="@+id/main_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent"
+        android:textSize="32dp"
+        android:layout_below="@+id/main_edit"
+        />
+
+    <Button
+        android:id="@+id/main_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialog"
+        android:textSize="32dp"
+        android:layout_below="@+id/main_intent"
+        />
+
+    <Button
+        android:id="@+id/main_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recycler"
+        android:textSize="32dp"
+        android:layout_below="@+id/main_dialog"
+        />
+
 </RelativeLayout>

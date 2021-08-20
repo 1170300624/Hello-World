@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntentTestActivity">
+
+    <TextView
+        android:id="@+id/intent_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent Test"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:padding="10dp"
+        />
+    <Button
+        android:id="@+id/intent_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="grid"
+        android:layout_below="@id/intent_txt"
+        android:textSize="32sp"
+        />
+
+</RelativeLayout>
