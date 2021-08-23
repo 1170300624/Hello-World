@@ -68,4 +68,13 @@
         android:layout_below="@+id/main_dialog"
         />
 
+    <Button
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment"
+        android:textSize="32dp"
+        android:layout_below="@+id/main_recycler"
+        />
+
 </RelativeLayout>

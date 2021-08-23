@@ -1,13 +1,18 @@
 package com.example.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnItt;
     private Button mBtnDlg;
     private Button mBtnRcl;
+    private Button mBtnFrg;
     private EditText mEdt;
+    private TimeChangeReceiver tCR;
 
 
     @Override
@@ -29,7 +36,14 @@ public class MainActivity extends AppCompatActivity {
         mBtnItt = findViewById(R.id.main_intent);
         mBtnDlg = findViewById(R.id.main_dialog);
         mBtnRcl = findViewById(R.id.main_recycler);
+        mBtnFrg = findViewById(R.id.main_fragment);
         mEdt = findViewById(R.id.main_edit);
+
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction("android.intent.action.TIME_TICK");
+        tCR = new TimeChangeReceiver();
+        registerReceiver(tCR, intentFilter);
+
 
         mBtnLst.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +83,29 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        mBtnFrg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ContainerActivity.class);
+                startActivity(intent);
+            }
+        });
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(tCR);
+    }
+
+    class TimeChangeReceiver extends BroadcastReceiver{
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Toast.makeText(context, "Time has changed.", Toast.LENGTH_SHORT).show();
+
+        }
     }
 
 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/frag_a_alter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alter to B-Fragment"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/frag_a_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="message"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/frag_a_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alter text"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/frag_a_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A Fragment"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+
+        />
+
+</LinearLayout>

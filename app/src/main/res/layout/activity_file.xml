@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FileActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/file_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:hint="Edit Here."
+        />
+
+    <TextView
+        android:id="@+id/file_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:background="#C0C"
+        />
+
+    <Button
+        android:id="@+id/file_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sure"
+        android:textSize="32sp"
+        />
+
+
+</LinearLayout>
