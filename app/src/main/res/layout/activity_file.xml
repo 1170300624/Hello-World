@@ -21,14 +21,31 @@
         android:layout_height="wrap_content"
         android:textSize="32sp"
         android:textColor="@color/black"
-        android:background="#C0C"
+        android:background="#FFB6C1"
         />
 
     <Button
         android:id="@+id/file_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sure"
+        android:text="Write"
+        android:textSize="32sp"
+        />
+
+    <TextView
+        android:id="@+id/file_txt_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:background="#FFB6C1"
+        />
+
+    <Button
+        android:id="@+id/file_button_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read"
         android:textSize="32sp"
         />
 

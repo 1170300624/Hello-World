@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Helloworld">
         <activity
+            android:name=".SqlActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PagerActivity"
+            android:exported="true" />
+        <activity
             android:name=".FileActivity"
             android:exported="true" />
 
